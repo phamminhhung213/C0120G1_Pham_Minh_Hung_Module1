@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    function giaTriNhoNhat(a,b,c) {
+        let min =a ;
+        if(min>b)
+        {
+            min=b;
+        }
+        else if(min>c)
+        {
+            min=c;
+        }
+        else{
+            min =a;
+        }
+
+         return min;
+
+    }
+
+    let nhapSoA = parseInt(prompt("Nhap:  "));
+    let nhapSoB = parseInt(prompt("Nhap:  "));
+    let nhapSoC = parseInt(prompt("Nhap:  "));
+   gtnn =(giaTriNhoNhat(nhapSoA,nhapSoB,nhapSoC));
+   // gtnn =giaTriNhoNhat(6,7,8);
+    alert(gtnn);
+</script>
+
+</body>
+</html>

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+<!--Bài 2: Viết hàm tính diện tích, hàm tính chu vi hình tròn. Gọi hàm vừa xây dựng được-->
+
+<script>
+    function dienTichHinhTron(r) {
+        const PI =3.14;
+        return  r*r*PI;
+    }
+    function chuViHinhTron(r) {
+        const PI =3.14;
+        return 2*r*PI;
+
+    }
+    let a = parseFloat(prompt("Nhap vao r: "));
+    dientich = dienTichHinhTron(a);
+    chuvi = chuViHinhTron(a);
+    alert("chu vi là"+chuvi  +"   diện tích là"+dientich);
+   // alert(dientich);
+</script>
+
+</body>
+</html>

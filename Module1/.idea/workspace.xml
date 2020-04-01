@@ -1,0 +1,243 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="2af6bd4c-2ef2-4517-9921-c2c25c4b7980" name="Default Changelist" comment="" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="JavaScript File" />
+        <option value="HTML File" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../.." />
+  </component>
+  <component name="ProjectId" id="1Yl9ckTbEUDLkSPwkgseBAyyb1Y" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showExcludedFiles" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="DefaultHtmlFileTemplate" value="HTML File" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/B1/BT" />
+    <property name="node.js.detected.package.eslint" value="true" />
+    <property name="node.js.detected.package.tslint" value="true" />
+    <property name="node.js.path.for.package.eslint" value="project" />
+    <property name="node.js.path.for.package.tslint" value="project" />
+    <property name="node.js.selected.package.eslint" value="(autodetect)" />
+    <property name="node.js.selected.package.tslint" value="(autodetect)" />
+    <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
+    <property name="nodejs_npm_path_reset_for_default_project" value="true" />
+    <property name="settings.editor.selected.configurable" value="editor.preferences.fonts.default" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="E:\CodeGym\C0120G1\Module1\src\C0120G1_Pham_Minh_Hung\B1\BT" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="E:\CodeGym\C0120G1\Module1\src\C0120G1_Pham_Minh_Hung\B7.Lập trình hướng đối tượng\TH" />
+      <recent name="E:\CodeGym\C0120G1\Module1\src\C0120G1_Pham_Minh_Hung" />
+      <recent name="E:\CodeGym\C0120G1\Module1\src\C0120G1_Pham_Minh_Hung\LAG" />
+      <recent name="E:\CodeGym\C0120G1\Module1\src\C0120G1_Pham_Minh_Hung\Case Study" />
+      <recent name="E:\CodeGym\C0120G1\Module1\src\C0120G1_Pham_Minh_Hung\Case Study\Task\Yêu cầu 1" />
+    </key>
+  </component>
+  <component name="RunManager" selected="JavaScript Debug.index.html">
+    <configuration name="Pin.html" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/C0120G1_Pham_Minh_Hung/Lập trình hướng đối tượng (2)/TH/Xây dựng lớp mô phỏng sự hoạt động của đèn pin/Pin.html" useBuiltInWebServerPort="true">
+      <method v="2" />
+    </configuration>
+    <configuration name="Temperature.html" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/C0120G1_Pham_Minh_Hung/B7.Lập trình hướng đối tượng/BT/Xây dựng lớp mô tả Temperature/Temperature.html" useBuiltInWebServerPort="true">
+      <method v="2" />
+    </configuration>
+    <configuration name="hinhChuNhat.html" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/C0120G1_Pham_Minh_Hung/B7.Lập trình hướng đối tượng/BT/Xây dựng lớp mô tả hình chữ nhật/hinhChuNhat.html" useBuiltInWebServerPort="true">
+      <method v="2" />
+    </configuration>
+    <configuration name="index.html" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/C0120G1_Pham_Minh_Hung/Lập trình hướng đối tượng (2)/BT/Game đơn giản - di chuyển đối tượng/index.html" useBuiltInWebServerPort="true">
+      <method v="2" />
+    </configuration>
+    <configuration name="script.js" type="NodeJSConfigurationType" temporary="true" nameIsGenerated="true" path-to-js-file="$PROJECT_DIR$/B8.Lập trình hướng đối tượng (2)/BT/Game đơn giản - di chuyển đối tượng/script.js" working-dir="$PROJECT_DIR$/B8.Lập trình hướng đối tượng (2)/BT/Game đơn giản - di chuyển đối tượng">
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="JavaScript Debug.index.html" />
+        <item itemvalue="Node.js.script.js" />
+        <item itemvalue="JavaScript Debug.Pin.html" />
+        <item itemvalue="JavaScript Debug.Temperature.html" />
+        <item itemvalue="JavaScript Debug.hinhChuNhat.html" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="2af6bd4c-2ef2-4517-9921-c2c25c4b7980" name="Default Changelist" comment="" />
+      <created>1578291760199</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1578291760199</updated>
+      <workItem from="1578291761413" duration="6083000" />
+      <workItem from="1578298796577" duration="25000" />
+      <workItem from="1578365955200" duration="21224000" />
+      <workItem from="1578446226181" duration="27792000" />
+      <workItem from="1578533447958" duration="10633000" />
+      <workItem from="1578549947813" duration="1963000" />
+      <workItem from="1578559546335" duration="2736000" />
+      <workItem from="1578618739257" duration="19831000" />
+      <workItem from="1578879689115" duration="16386000" />
+      <workItem from="1578968010663" duration="13563000" />
+      <workItem from="1579050865245" duration="5940000" />
+      <workItem from="1579067682054" duration="15698000" />
+      <workItem from="1581384385496" duration="22231000" />
+      <workItem from="1581473604473" duration="1377000" />
+      <workItem from="1581488096707" duration="761000" />
+      <workItem from="1581491086790" duration="45000" />
+      <workItem from="1583506413037" duration="132000" />
+      <workItem from="1585541138100" duration="65000" />
+    </task>
+    <task id="LOCAL-00001" summary="toin da sua">
+      <created>1578292196294</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1578292196294</updated>
+    </task>
+    <task id="LOCAL-00002" summary="Yes!">
+      <created>1578292333223</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1578292333223</updated>
+    </task>
+    <task id="LOCAL-00003" summary="Yes!">
+      <created>1578367035663</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1578367035663</updated>
+    </task>
+    <task id="LOCAL-00004" summary="Yes!">
+      <created>1578368769153</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1578368769153</updated>
+    </task>
+    <task id="LOCAL-00005" summary="Yes!">
+      <created>1578385339966</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1578385339966</updated>
+    </task>
+    <task id="LOCAL-00006" summary="Yes!">
+      <created>1578385408940</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1578385408940</updated>
+    </task>
+    <task id="LOCAL-00007" summary="Yes!">
+      <created>1578387989696</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1578387989696</updated>
+    </task>
+    <task id="LOCAL-00008" summary="Yes!">
+      <created>1578453266946</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1578453266946</updated>
+    </task>
+    <task id="LOCAL-00009" summary="Yes!">
+      <created>1578457666593</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1578457666593</updated>
+    </task>
+    <task id="LOCAL-00010" summary="Yes!">
+      <created>1578462174725</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1578462174725</updated>
+    </task>
+    <task id="LOCAL-00011" summary="Yes!">
+      <created>1578560858283</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1578560858283</updated>
+    </task>
+    <task id="LOCAL-00012" summary="Yes!">
+      <created>1578619950295</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1578619950295</updated>
+    </task>
+    <task id="LOCAL-00013" summary="Yes!">
+      <created>1578644829568</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1578644829568</updated>
+    </task>
+    <task id="LOCAL-00014" summary="Yes!">
+      <created>1578905850580</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1578905850581</updated>
+    </task>
+    <task id="LOCAL-00015" summary="Yes!">
+      <created>1579056556952</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1579056556952</updated>
+    </task>
+    <task id="LOCAL-00016" summary="Yes!">
+      <created>1581491131163</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1581491131163</updated>
+    </task>
+    <option name="localTasksCounter" value="17" />
+    <servers />
+  </component>
+  <component name="TodoView">
+    <todo-panel id="selected-file">
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+    <todo-panel id="all">
+      <are-packages-shown value="true" />
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="toin da sua" />
+    <MESSAGE value="Yes!" />
+    <option name="LAST_COMMIT_MESSAGE" value="Yes!" />
+  </component>
+</project>

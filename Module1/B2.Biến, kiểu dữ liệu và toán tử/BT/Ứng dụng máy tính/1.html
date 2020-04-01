@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Caculator</title>
+</head>
+<body>
+<form action="">
+    <input type="text" id="nhap1">
+    <input type="text" id="nhap2">
+    <br>
+    <br>
+    <button style="width: 50px;height: 50px;" type="button" onclick="bt1()" ;>+</button>
+    <button style="width: 50px;height: 50px;margin-left: 40px;" type="button" onclick="bt2()";>-</button>
+    <button style="width: 50px;height: 50px;margin-left: 40px" type="button" onclick="bt3()";>*</button>
+    <button style="width: 50px;height: 50px;margin-left: 40px" type="button" onclick="bt4()";>/</button>
+    <p id="kq"></p>
+
+</form>
+<script>
+    function bt1() {
+        var a,b,c;
+
+        a=parseFloat(document.getElementById("nhap1").value);
+        b=parseFloat(document.getElementById("nhap2").value);
+        c=a+b;
+        document.getElementById("kq").innerHTML=c;
+
+    }
+    function bt2() {
+        var a,b,c;
+
+        a=parseFloat(document.getElementById("nhap1").value);
+        b=parseFloat(document.getElementById("nhap2").value);
+        c=a-b;
+        document.getElementById("kq").innerHTML=c;
+
+    }
+    function bt3() {
+        var a,b,c;
+
+        a=parseFloat(document.getElementById("nhap1").value);
+        b=parseFloat(document.getElementById("nhap2").value);
+        c=a*b;
+        document.getElementById("kq").innerHTML=c;
+
+    }
+    function bt4()
+    {
+        var a,b,c;
+
+        a=parseFloat(document.getElementById("nhap1").value);
+        b=parseFloat(document.getElementById("nhap2").value);
+        if(b==0){
+            alert("khong the chia cho 0 dau nha");
+        }
+        else
+        {
+            c=a/b;
+            document.getElementById("kq").innerHTML=c;
+        }
+
+    }
+</script>
+
+</body>
+</html>

@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<canvas id="myCanvas" width="1000" height="500" style="border: 1px solid black;" >
+
+</canvas>
+<script>
+    function  Rectangle() {
+
+        //Thuộc tính
+        this.chieuDai=chieuDai;
+        this.chieuRong=chieuRong;
+        //phương thức
+        this.dienTich=dienTich;
+        this.chuVi=chuVi;
+        this.paintCanvas=paintCanvas;
+        // this.paintCanvas=paintCanvas;
+        //Xây dựng phương thức
+        function dienTich() {
+            return chieuDai*chieuRong;
+        }
+        function chuVi() {
+            return (chieuDai+chieuRong)*2;
+        }
+        function paintCanvas() {
+            var c = document.getElementById("myCanvas");
+            var ctx = c.getContext("2d");
+            ctx.fillStyle = "#55ff6c";
+            ctx.fillRect(0,0,chieuDai,chieuRong);
+        }
+
+    }
+    // let Rectangle = function () {
+        // this.a = a;
+        // this.b= b;
+        //
+        // this.getA = function () {
+        //     return this.a;
+        //
+        // }
+        // this.getB = function () {
+        //     return this.b;
+        //
+        // }
+        // // this.setA = function (a) {
+        // //    this.a=a;
+        // //
+        // // }
+        // // this.setB = function (b) {
+        // //     this.b=b;
+        // //
+        // // }
+        //
+        // this.getChuVi = function () {
+        //     return (a + b)*2;
+        //
+        // }
+        // this.getDienTich = function () {
+        //     return a*b;
+        //
+        // }
+        // function paintCanvas() {
+        //     var c = document.getElementById("myCanvas");
+        //     var ctx = c.getContext("2d");
+        //     ctx.fillStyle = "#55ff6c";
+        //     ctx.fillRect(0,0,chieuDai,chieuRong);
+        // }
+    let chieuDai=parseInt(prompt("Moi ban nhap vào chieu dai : "));
+    let chieuRong=parseInt(prompt("Mời bạn nhập vào chiều rộng :"));
+
+
+
+    var enter="<br>";
+    var Rectangle=new Rectangle();
+    Rectangle.paintCanvas();
+    document.write(enter+"diện tích HCN là: "+Rectangle.dienTich()+enter);
+    document.write("chu vi HCN là: "+Rectangle.chuVi());
+
+    // let hinhChuNhat = new Rectangle(2,4);
+    // let chieuDai = hinhChuNhat.getA();
+    // let chieuRong = hinhChuNhat.getB();
+    // let chuVi = hinhChuNhat.getChuVi();
+    // let dienTich = hinhChuNhat.getDienTich();
+
+
+
+
+</script>
+</body>
+</html>

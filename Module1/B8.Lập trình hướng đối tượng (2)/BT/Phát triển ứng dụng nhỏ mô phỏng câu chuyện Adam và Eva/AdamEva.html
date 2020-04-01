@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<div style=" width: 200px">
+    <h2 id="idName">Name:</h2>
+    <label id="idGender">Gender:</label><br>
+    <label id="idWeight">Weight:</label><br>
+    <input type="button" onclick="fEatApple();" value="Eat Apple"> <br>
+    <input type="text" id="idSay">
+    <input type="button" onclick="fSay();" value="Nói">
+</div>
+<div style=" width: 200px ">
+    <h2 id="idName2">Name:</h2>
+    <label id="idGender2">Gender:</label><br>
+    <label id="idWeight2">Weight:</label><br>
+    <input type="button" onclick="fEatApple2();" value="Eat Apple"> <br>
+    <input type="text" id="idSay2">
+    <input type="button" onclick="fSay2();" value="Nói">
+</div>
+<div style=" width: 20px ">
+    <h2 id="idName3">Apple:</h2>
+    <p>Weight:</p> <br>
+    <label id="idWeight3" ></label><br>
+</div>
+
+</div>
+<!--<div style=" width: 20px ">-->
+<!--    <h2 id="idName4">Apple:</h2>-->
+<!--    <p>Weight:</p> <br>-->
+<!--    <label id="idWeight4" ></label><br>-->
+<!--</div>-->
+
+
+<script>
+    var Apple = function () {
+
+        this.setWeight = function (weight) {
+            this.weight = weight;
+        };
+        this.getWeight = function () {
+            return this.weight;
+        };
+        this.isEmpty =function () {
+            if(this.weight >0) return false;
+            else
+                return true;
+        }
+
+    };
+
+    var Human = function () {
+
+
+
+        this.setName = function (name) {
+            this.name = name;
+        };
+        this.getName = function () {
+            return this.name;
+        };
+
+        this.setGender = function (gender) {
+            this.gender = gender;
+        };
+        this.getGender = function () {
+            return this.gender;
+        };
+
+        this.setWeight = function (weight) {
+            this.weight = weight;
+        };
+        this.getWeight = function () {
+            return this.weight;
+        };
+
+        this.say = function (say) {
+            alert(say);
+        };
+
+        this.eat = function (apple) {
+            if(apple.isEmpty()==false) {
+                apple.weight = apple.weight - 1;
+                this.weight = this.weight + 1;
+            }
+            else
+                this.say("Hết Táo");
+        }
+
+
+    };
+
+    var apple1 = new Apple();
+   // var apple2 = new Apple();
+    apple1.setWeight(10);
+
+    //apple2.setWeight(20);
+
+    var eva = new Human();
+    eva.setName("Eva");
+    eva.setGender("Female");
+    eva.setWeight(45);
+    var adam = new Human();
+    adam.setName("Adam");
+    adam.setGender("Male");
+    adam.setWeight(60);
+
+
+    document.getElementById("idName").innerText = eva.getName();
+    document.getElementById("idName2").innerText = adam.getName();
+    document.getElementById("idGender").innerText = eva.getGender();
+    document.getElementById("idGender2").innerText = adam.getGender();
+    document.getElementById("idWeight").innerText = eva.getWeight();
+    document.getElementById("idWeight2").innerText = adam.getWeight();
+    document.getElementById("idWeight3").innerText = apple1.getWeight();
+   // document.getElementById("idWeight4").innerText = apple2.getWeight();
+
+    function fEatApple() {
+        eva.eat(apple1);
+        //eva.eat(apple2);
+        document.getElementById("idWeight").innerText = eva.getWeight();
+        document.getElementById("idWeight3").innerText = apple1.getWeight();
+       // document.getElementById("idWeight4").innerText = apple2.getWeight();
+
+
+    }
+
+    function fEatApple2() {
+        adam.eat(apple1);
+        document.getElementById("idWeight2").innerText = adam.getWeight();
+        document.getElementById("idWeight3").innerText = apple.getWeight();
+    }
+
+    function fSay() {
+        eva.say(document.getElementById("idSay").value);
+    }
+
+    function fSay2() {
+        adam.say(document.getElementById("idSay2").value);
+    }
+
+</script>
+
+</body>
+</html>

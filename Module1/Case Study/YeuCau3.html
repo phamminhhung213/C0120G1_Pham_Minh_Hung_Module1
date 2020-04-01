@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let nameCustomer = prompt("Enter Name Customer: ");
+    let idCard = prompt("Enter ID Card Customer: ");
+    while(parseInt(idCard)<10000000 || parseInt(idCard)>99999999|| isNaN(idCard)){
+        alert("Số CMND phải đúng theo định dạng XXXXXXXX với X là số nguyên dương");
+        idCard = prompt("Enter ID Card Customer: ");
+    }
+    let birthdayCustomer = prompt("Enter Birthday Customer (dd/MM/YYYY): ");
+    while(!birthdayCustomer.includes("/"))
+    {
+        alert("Ngày sinh phải đúng định dang dd/MM/YYYY");
+        birthdayCustomer = prompt("Enter Birthday Customer (dd/MM/YYYY): ");
+    }
+    let emailCustomer = prompt("Enter Email Customer: ");
+    while(emailCustomer.includes("@") == false || emailCustomer.includes(".") == false)
+    {
+        alert("Địa chỉ email phải đúng định dạng abc@abc.abc");
+        emailCustomer = prompt("Enter Email Customer: ");
+    }
+    let addressCustomer = prompt("Enter Address Customer: ");
+    let typeCustomer = prompt("Enter Type Customer: ");
+    let discount = prompt("Enter Discount: ");
+    while(isNaN(discount) || parseInt(discount) < 0)
+    {
+        alert("Phải là số nguyên dương");
+        discount = prompt("Enter Discount: ");
+    }
+    let numberOfAccompanying = prompt("Enter Number Of Accompanying: ");
+    while(isNaN(numberOfAccompanying) || parseInt(numberOfAccompanying) < 0)
+    {
+        alert("Phải là số nguyên dương");
+        numberOfAccompanying = prompt("Enter Number Of Accompanying: ");
+    }
+    let typeRoom = prompt("Enter Type Room: ");
+    let rentDay  = prompt("Enter Rent Day: ");
+    while(isNaN(rentDay) || parseInt(rentDay) < 0)
+    {
+        alert("Phải là số nguyên dương");
+        rentDay  = prompt("Enter Rent Day: ");
+    }
+    let typeService = prompt("Enter Type Service: ");
+
+    //Yêu cầu 2
+    nameCustomer = nameCustomer.trim();
+    let name2 = "";
+    for (i=0; i<nameCustomer.length;i++) {
+        if(nameCustomer.charAt(i) === " " && nameCustomer.charAt(i+1) === " ")
+        {
+            continue;
+        }
+        if(i === 0 || nameCustomer.charAt(i-1)== " ") {
+            name2 = name2 + nameCustomer.charAt(i).toUpperCase();
+            continue;
+        }
+        name2 = name2 + nameCustomer.charAt(i).toLowerCase();
+    }
+    nameCustomer = name2;
+    alert(
+        "Information Of Customer: \n"+
+        "Name: " + nameCustomer +
+        "\nId Card: " + idCard +
+        "\nBirthday: " + birthdayCustomer+
+        "\nEmail: " + emailCustomer +
+        "\nAddress: " + addressCustomer +
+        "\nType Customer: " + typeCustomer +
+        "\nDiscount: " + discount +
+        "\nAccompanying: " + numberOfAccompanying +
+        "\nType Room; " + typeRoom +
+        "\nRent Days: " + rentDay +
+        "\nType Service: " + typeService
+    );
+    //3
+</script>
+</body>
+</html>

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <script>
+        let Circle = function() {
+
+           // this.radius = radius;
+            this.setRadius = function (radius) {
+                this.radius = radius;
+            }
+            this.getRadius = function() {
+                return this.radius;
+            }
+            this.getArea = function() {
+                return Math.PI * this.radius * this.radius;
+            }
+
+
+
+        };
+        let ht = new Circle();
+        ht.setRadius(2);
+        let a = ht.getRadius(); // 2
+
+        let area = ht.getArea(); // 12.566370614359172
+        alert("radius: " + a + "; area: " + area);
+
+
+    </script>
+</body>
+</html>

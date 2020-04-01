@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<form>
+
+    <input id="id1">
+    <button type="button" onclick="bt1();">Tra</button>
+    <p id="id2"></p>
+</form>
+<script>
+    let eL  = ["monday","tuesday","wednesday","thursday","friday","saturday","sunday"];
+    let tV = ["thứ 2","thứ 3","thứ 4","thứ 5","thứ 6","thứ 7","chủ nhật"];
+    function bt1() {
+        let a = document.getElementById("id1").value.toString();
+        for (let i = 0; i < eL.length; i++) {
+            if(a == eL[i])
+            {
+                document.getElementById("id2").innerHTML = tV[i] ;
+                break;
+            }
+            else if(a == tV[i])
+            {
+                document.getElementById("id2").innerHTML = eL[i] ;
+                break;
+            }
+            else
+            {
+                document.getElementById("id2").innerHTML = "KTT" ;
+
+            }
+        }
+
+
+
+    }
+
+</script>
+</body>
+</html>

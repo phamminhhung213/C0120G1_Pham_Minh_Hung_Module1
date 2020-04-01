@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<form action="">
+    <h3>Input</h3>
+    <input type="text" id="nhap">
+    <select id="sl1">
+        <option value="VN">VN</option>
+        <option value="USA">USA</option>
+
+    </select>
+    <select id="sl2">
+        <option value="USA">USA</option>
+        <option value="VN">VN</option>
+
+    </select>
+    <button type="button" onclick="doiTien();">Chuyển đổi</button>
+    <p id="kq"></p>
+</form>
+
+<script>
+   function doiTien() {
+       var a ,b,c;
+       a = document.getElementById("sl1").value;
+       b = document.getElementById("sl2").value;
+
+       if(a==='VN'){
+
+           c = parseFloat(document.getElementById("nhap").value)*1/20000;
+           document.getElementById("kq").innerHTML=c;
+       }
+       else if(a==="USA"){
+           c = parseFloat(document.getElementById("nhap").value)*20000;
+           document.getElementById("kq").innerHTML=c;
+       }
+
+   }
+</script>
+
+</body>
+</html>

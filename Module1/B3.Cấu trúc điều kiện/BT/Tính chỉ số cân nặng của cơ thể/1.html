@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<form>
+    <h3>Nhập vào chiều cao</h3>
+    <input type="text" id="chieucao">
+    <br>
+    <h3>Nhập vào cân nặng</h3>
+    <input type="text" id="cannang">
+    <br>
+    <br>
+    <button style="width: 70px; height: 50px;"type="button" onclick="bt1();">KQ</button>
+
+    <h4>TT</h4><p id="kq"></p>
+    <h4>BMI</h4><p id="idbmi"></p>
+</form>
+<script>
+    function bt1() {
+        var a,b,BMI;
+        a=parseFloat(document.getElementById("chieucao").value);
+        b=parseFloat(document.getElementById("cannang").value);
+        BMI=a/(b*b);
+
+        if (BMI < 18.5) {
+            document.getElementById("kq").innerHTML = "Underweight";
+            document.getElementById("idbmi").innerHTML = BMI;
+        }
+        else if (BMI < 25.0) {
+            document.getElementById("kq").innerHTML = "Normal";
+            document.getElementById("idbmi").innerHTML = BMI;
+        }
+        else if (BMI < 30.0) {
+            document.getElementById("kq").innerHTML = "Overweight";
+            document.getElementById("idbmi").innerHTML = BMI;
+        }
+        else {
+            document.getElementById("kq").innerHTML = "Obese";
+            document.getElementById("idbmi").innerHTML = BMI;
+        }
+
+    }
+</script>
+</body>
+</html>

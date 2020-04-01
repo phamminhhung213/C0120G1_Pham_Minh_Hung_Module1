@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<form>
+    <h2>Do You Love Me</h2>
+    <button style="height: 50px;width: 50px; " type="button" onclick="bt1();">Yes</button>
+    <button id="bt11" style="height: 50px;width: 50px;position: relative;" type="button" onmouseover="bt2();">No</button>
+
+</form>
+<script>
+ function bt1() {
+     alert("Wow!!!!")
+ }
+ function bt2() {
+     var x =Math.round(Math.random() * window.innerHeight );
+     var y =Math.round(Math.random() * window.innerWidth );
+
+     document.getElementById("bt11").style.top =x + "px";
+     document.getElementById("bt11").style.left =y +"px";
+
+ }
+</script>
+</body>
+</html>

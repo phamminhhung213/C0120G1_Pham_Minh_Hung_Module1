@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+function kiemTraSNT(a) {
+    if(a<2)
+    {
+        return false;
+    }
+    for(let i=2;i<=Math.sqrt(a);i++)
+    {
+        if(a % i ==0)
+            return false;
+
+    }
+    return true;
+
+
+}
+
+let nhap = parseInt(prompt("Nhap vao 1 so > 2: "));
+let snt = kiemTraSNT(nhap);
+if(snt)
+{
+    alert("day la so nguyen to");
+}
+
+else
+{
+    alert("khong phai");
+}
+
+
+</script>
+</body>
+</html>

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+
+
+
+    function doiNguocMang(arr) {
+        let result = "";
+        for(let i=arr.length-1;i>=0;i--){
+            //document.write(arr[i]);
+            result+=arr[i];
+        }
+       return result;
+
+    }
+    let arr1=[];
+    let nhap=parseInt(prompt(""));
+    for(let i=0;i<nhap;i++){
+        arr1[i]=prompt("nhap vao gia tri thu"+(i+1));
+    }
+    sss = doiNguocMang(arr1);
+    alert(sss);
+    // let arr = [1,2,4,5,6,7,8,9];
+    // let first = 0;
+    // let last = arr.length-1;
+    //
+    // while(first<last){
+    //         let swap = arr[first];
+    //         arr[first]= arr[last];
+    //         arr[last] =  swap;
+    //         first++;
+    //         last--;
+    // }alert(arr);
+
+
+
+</script>
+</body>
+</html>

@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+
+
+    function timKiemTuyenTinh(arr) {
+
+        for (let i = 0; i < arr.length; i++) {
+            if (x == arr[i]) {
+                alert("Bạn đoán đúng !");
+                break;
+            } else
+                alert(("Bạn đoán sai !"));
+        }
+    }
+
+    function timKiemNhiPhan(arr, left, right, m) {
+        for (let i = 0; i < arr.length - 1; i++) {
+            for (let j = i + 1; j < arr.length - 1; j++) {
+                if (arr[j] < arr[i]) {
+                    let temp = arr[i];
+                    arr[i] = arr[j];
+                    arr[j] = temp;
+                }
+            }
+        }
+
+        let mid;
+        while (left < right) {
+            mid = (left + right) / 2;
+            if (arr[mid] == m) {
+                break;
+            } else if (arr[mid] > m) {
+                right = mid - 1;
+            } else
+                left = mid + 1
+        }
+        if (arr[left] == m) return 1;
+        else
+            return -1;
+
+    }
+
+
+    var arr1 = [4, 5, 6, 1, 8, 10];
+    //var x = parseInt(prompt("Nhập vào 1 số:"));
+    // var m = parseInt(prompt("Nhập vào 1 số:"));
+    var tk2 = timKiemNhiPhan(arr1,0,arr1.length-1,5);
+    alert(tk2);
+    // var tk = timKiemTuyenTinh(arr1);
+
+
+</script>
+
+</body>
+</html>

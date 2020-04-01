@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let arrayCustomer = [];
+    let arrayCustomerDefault = ["hung","hungg","hungggg"];
+    let choose = prompt(
+        "1. Add New Customer.\n"+
+        "2. Delete Customer.\n"
+    );
+    switch (choose) {
+        case "1":
+            let number = parseInt(prompt("Enter number of customer you want enter: "));
+            for(let i = 0; i<number;i++)
+                arrayCustomer.push(prompt("Enter Name Customer no : "+(i+1)));
+            let result = "";
+            for(let i = 0; i<number;i++)
+            {
+                result +="\n"+(i+1)+" "+arrayCustomer[i];
+            }
+            alert(result);
+            arrayCustomer.sort();
+            arrayCustomer.reverse();
+            result = "";
+            for(let i = 0; i<number;i++)
+            {
+                result +="\n"+(i+1)+" "+arrayCustomer[i];
+            }
+            alert(result);
+            break;
+        case "2":
+            let result2 = "";
+            for(let i=0; i<arrayCustomerDefault.length;i++)
+                result2 +="\n"+(i+1)+" "+arrayCustomerDefault[i];
+            alert(result2);
+            let deleteName = prompt("Enter index you want to delete: ");
+            arrayCustomerDefault.splice(deleteName-1,1);
+            result2 = "";
+            for(let i=0; i<arrayCustomerDefault.length;i++)
+                result2 +="\n"+(i+1)+" "+arrayCustomerDefault[i];
+            alert(result2);
+            break;
+        default:
+            alert("Failed !!!");
+            break;
+    }
+    //4
+</script>
+</body>
+</html>

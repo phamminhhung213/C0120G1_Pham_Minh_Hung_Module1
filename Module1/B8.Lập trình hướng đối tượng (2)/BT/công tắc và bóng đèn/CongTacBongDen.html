@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<form action="">
+    <img name="bongdensang" src="1.jpeg" width="350" height="500">
+
+<!--   <input type="button"onclick="batden();"value="Bật bóng đèn">-->
+<!--    <input type="button"onclick="tatden();"value="Tắt bóng đèn"><br>-->
+    <img style="height: 100px;width: 100px;" src="4.jpg" alt="" onclick="batden()" >
+    <img style="height: 100px;width: 100px;" src="5.jpg" alt="" onclick="tatden()" >
+</form>
+<script>
+    var SwitchButton = function (status1,lamp) {
+        this.status1=status1;
+            this.lamp=lamp;
+        this.getStatus1 = function () {
+            return this.status1;
+        };
+        this.getLamp =  function () {
+            return this.lamp;
+        };
+        this.switchOff = function () {
+            return this.status1 = false;
+            this.connectElectricLamp(lamp);
+        };
+        this.switchOn = function () {
+             this.status1 =true;
+            this.connectElectricLamp(lamp);
+        };
+       this.connectElectricLamp =  function () {
+        if(this.status1 == true) {
+            lamp.turnOn();
+        }
+        else
+            lamp.turnOff();
+       }
+
+    };
+    var ElectricLamp = function () {
+            this.getStatus2 = function () {
+                return this.status2;
+            };
+            this.turnOff = function () {
+                document.images['bongdensang'].src = '1.jpeg';
+                return this.Status2==false;
+            };
+            this.turnOn = function () {
+            document.images['bongdensang'].src = '2.jpg';
+            return this.Status2=true;
+
+            }
+
+    };
+
+
+    var bongDen =new ElectricLamp();
+    var batTat = new SwitchButton(false,bongDen);
+    function batden(){
+        batTat.switchOn();
+        batTat.connectElectricLamp();
+    }
+    function tatden(){
+        batTat.switchOff();
+        batTat.connectElectricLamp();
+    }
+
+
+
+
+
+</script>
+</body>
+</html>

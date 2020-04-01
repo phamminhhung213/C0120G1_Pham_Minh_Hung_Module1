@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let arrListCustomer = [];
+    let checkEditCustomer = false;
+    let checkDeleteCustomer = false;
+    displayMainMenu();
+    function displayMainMenu() {
+        let choose = prompt(
+            "1. Add New Customer.\n"+
+            "2. Display Information Customer.\n"+
+            "3. Edit Information Customer.\n "+
+            "4. Delete Customer.\n"+
+            "5. Exit.\n"
+        );
+        switch (choose) {
+            case "1":
+                addNewCustomer();
+                break;
+            case "2":
+                displayCustomers();
+                break;
+            case "3":
+                chooseCustomerEdit();
+                break;
+            case "4":
+                chooseDeleteCustomer();
+                break;
+            case "5":
+                break;
+            default:
+                alert("Failed !!!!!");
+                break;
+        }
+    }
+    function addNewCustomer() {
+        let arrayInfo =[];
+        let nameCustomer = prompt("Enter Name Customer: ");
+        let idCard = prompt("Enter ID Card Customer: ");
+        while(parseInt(idCard)<100000000 || parseInt(idCard)>999999999|| isNaN(idCard)){
+            alert("Số CMND phải đúng theo định dạng XXXXXXXX với X là số nguyên dương");
+            idCard = prompt("Enter ID Card Customer: ");
+        }
+        let birthdayCustomer = prompt("Enter Birthday Customer (dd/MM/YYYY): ");
+        while(!birthdayCustomer.includes("/"))
+        {
+            alert("Ngày sinh phải đúng định dang dd/MM/YYYY");
+            birthdayCustomer = prompt("Enter Birthday Customer (dd/MM/YYYY): ");
+        }
+        let emailCustomer = prompt("Enter Email Customer: ");
+        while(emailCustomer.includes("@") == false || emailCustomer.includes(".") == false)
+        {
+            alert("Địa chỉ email phải đúng định dạng abc@abc.abc");
+            emailCustomer = prompt("Enter Email Customer: ");
+        }
+        let addressCustomer = prompt("Enter Address Customer: ");
+        let typeCustomer = prompt("Enter Type Customer: ");
+        let discount = prompt("Enter Discount: ");
+        while(isNaN(discount) || parseInt(discount) < 0)
+        {
+            alert("Phải là số nguyên dương");
+            discount = prompt("Enter Discount: ");
+        }
+        let numberOfAccompanying = prompt("Enter Number Of Accompanying: ");
+        while(isNaN(numberOfAccompanying) || parseInt(numberOfAccompanying) < 0)
+        {
+            alert("Phải là số nguyên dương");
+            numberOfAccompanying = prompt("Enter Number Of Accompanying: ");
+        }
+        let typeRoom = prompt("Enter Type Room: ");
+        let rentDay  = prompt("Enter Rent Day: ");
+        while(isNaN(rentDay) || parseInt(rentDay) < 0)
+        {
+            alert("Phải là số nguyên dương");
+            rentDay  = prompt("Enter Rent Day: ");
+        }
+        let typeService = prompt("Enter Type Service: ");
+        //Yêu cầu 2
+        nameCustomer = nameCustomer.trim();
+        let name2 = "";
+        for (i=0; i<nameCustomer.length;i++) {
+            if(nameCustomer.charAt(i) === " " && nameCustomer.charAt(i+1) === " ")
+            {
+                continue;
+            }
+            if(i === 0 || nameCustomer.charAt(i-1)== " ") {
+                name2 = name2 + nameCustomer.charAt(i).toUpperCase();
+                continue;
+            }
+            name2 = name2 + nameCustomer.charAt(i).toLowerCase();
+        }
+        nameCustomer = name2;
+        arrayInfo.push(nameCustomer);
+        arrayInfo.push(idCard);
+        arrayInfo.push(birthdayCustomer);
+        arrayInfo.push(emailCustomer);
+        arrayInfo.push(addressCustomer);
+        arrayInfo.push(typeCustomer);
+        arrayInfo.push(discount);
+        arrayInfo.push(numberOfAccompanying);
+        arrayInfo.push(typeRoom);
+        arrayInfo.push(rentDay);
+        arrayInfo.push(typeService);
+        arrListCustomer.push(arrayInfo);
+        displayMainMenu();
+    }
+    function displayCustomers() {
+        let result = "";
+        for (let i = 0; i < arrListCustomer.length; i++)
+        {
+            result += "\n" + (i+1) + "." + "Name : " + arrListCustomer[i][0]+
+                "; Id Card: " + arrListCustomer[i][1];
+        }
+        result += "\n" + (arrListCustomer.length +1)+ "Back to Menu";
+        let  chooseDisplayInfo = prompt(result);
+        if (chooseDisplayInfo.toString() !== (arrListCustomer.length+1).toString()) {
+            if (!checkDeleteCustomer) {
+                displayInformationCustomer(Number.parseInt(chooseDisplayInfo) - 1);
+            }else {
+                deleteCustomer(Number.parseInt(chooseDisplayInfo) - 1);
+            }
+        }
+        else  {
+            checkDeleteCustomer = false;
+            checkEditCustomer = false;
+            displayMainMenu();
+        }
+    }
+    function displayInformationCustomer(index) {
+        if (checkEditCustomer )
+        {
+            let chooseInfoEdit = prompt("1. Name :" +arrListCustomer[index][0]+
+                "\n2.Id Card :" + arrListCustomer[index][1]+
+                "\n3.Birthday :" + arrListCustomer[index][2]+
+                "\n4.Email :" + arrListCustomer[index][3]+
+                "\n5.Address :" + arrListCustomer[index][4]+
+                "\n6.Type Customer :" + arrListCustomer[index][5]+
+                "\n7.Discount :" + arrListCustomer[index][6]+
+                "\n8.Number Of Accompanying :" + arrListCustomer[index][7]+
+                "\n9.Type Room :" + arrListCustomer[index][8]+
+                "\n10.Rent Day :" + arrListCustomer[index][9]+
+                "\n11.Type Service :" + arrListCustomer[index][10]+
+                "\n12. Back");
+            if (chooseInfoEdit.toString() !== "12"){
+                editInformationCustomer(index,Number.parseInt(chooseInfoEdit)-1);
+            }
+            else
+            {
+                displayMainMenu();
+            }
+        }
+        alert("Information of Customer:\n" +
+            "Name :"+ arrListCustomer[index][0]+
+            "\nId Card :" + arrListCustomer[index][1]+
+            "\nBirthday :" + arrListCustomer[index][2]+
+            "\nEmail :" + arrListCustomer[index][3]+
+            "\nAddress :" + arrListCustomer[index][4]+
+            "\nType Customer :" + arrListCustomer[index][5]+
+            "\nDiscount :" + arrListCustomer[index][6]+
+            "\nNumber Of Accompanying :" + arrListCustomer[index][7]+
+            "\nType Room :" + arrListCustomer[index][8]+
+            "\nRent Day :" + arrListCustomer[index][9]+
+            "\nType Service :" + arrListCustomer[index][10]
+        );
+        displayMainMenu();
+    }
+    function chooseCustomerEdit() {
+        checkEditCustomer = true;
+        displayCustomers();
+    }
+    function editInformationCustomer(indexCustomer, indexInfor) {
+        let editInfo = prompt("Enter Info You Want Change: ");
+        switch (indexInfor) {
+            case 0:
+                arrListCustomer[indexCustomer][0] = editInfo;
+                break;
+            case 1:
+                arrListCustomer[indexCustomer][1] = editInfo;
+                break;
+            case 2:
+                arrListCustomer[indexCustomer][2] = editInfo;
+                break;
+            case 3:
+                arrListCustomer[indexCustomer][3] = editInfo;
+                break;
+            case 4:
+                arrListCustomer[indexCustomer][4] = editInfo;
+                break;
+            case 5:
+                arrListCustomer[indexCustomer][5] = editInfo;
+                break;
+            case 6:
+                arrListCustomer[indexCustomer][6] = editInfo;
+                break;
+            case 7:
+                arrListCustomer[indexCustomer][7] = editInfo;
+                break;
+            case 8:
+                arrListCustomer[indexCustomer][8] = editInfo;
+                break;
+            case 9:
+                arrListCustomer[indexCustomer][9] = editInfo;
+                break;
+            case 10:
+                arrListCustomer[indexCustomer][10] = editInfo;
+                break;
+            default:
+                alert("Fail!");
+                return;
+        }
+        checkEditCustomer = false;
+        displayMainMenu();
+    }
+    function  chooseDeleteCustomer() {
+        checkDeleteCustomer = true;
+        displayCustomers();
+    }
+    function  deleteCustomer(index) {
+        let chooseConfirm = prompt("Are You Sure Delete Customer: Name: " +arrListCustomer[index][0]+
+            "; Id Card: " +arrListCustomer[index][1]+
+            "\n1.Yes\n2.No");
+        if (chooseConfirm === "1"){
+            arrListCustomer.slice(index,1);
+            alert("Delete Complete!");
+        }
+        checkDeleteCustomer = false;
+        displayMainMenu();
+    }
+    displayMainMenu();
+</script>
+</body>
+</html>
